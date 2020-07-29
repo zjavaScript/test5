@@ -64,5 +64,11 @@ pipeline {
       }
     }
 
+    stage('f') {
+      steps {
+        echo '1111111'
+      }
+    }
+
   }
 }
