@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('f') {
       steps {
-        retry(count: 111111111)
+        archiveArtifacts(artifacts: '1111', allowEmptyArchive: true, caseSensitive: true, defaultExcludes: true, excludes: '2222', fingerprint: true, onlyIfSuccessful: true)
       }
     }
 
