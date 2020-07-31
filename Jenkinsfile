@@ -3,7 +3,10 @@ pipeline {
   stages {
     stage('f') {
       steps {
-        archiveArtifacts(artifacts: '1111', allowEmptyArchive: true, caseSensitive: true, defaultExcludes: true, excludes: '2222', fingerprint: true, onlyIfSuccessful: true)
+        node(label: '1222222') {
+          sh 'ls'
+        }
+
       }
     }
 
